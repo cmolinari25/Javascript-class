@@ -1,0 +1,60 @@
+body {
+    background: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+section {
+    border: black double 60px;
+    margin: 10px 500px 15px 500px;
+    background: bisque
+}
+
+h1 {
+    color:black;
+    font-size: 200px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+thead {
+    text-align: left;
+}
+
+h2 {
+    color: blue
+    font-size: 150px;
+}
+
+th {
+    color: gray;
+    font-size: 100px; font-style: italic;
+}
+
+table {
+    width: 2000px;
+}
+
+label {
+    display: block;
+}
+
+#name {
+    font-size: 60px;
+}
+
+#remarks {
+    font-size: 60px;   
+}
+
+#submit-btn {
+    display: block;
+    color: blue;
+    font-size: 60px;
+    font-style: bold;
+}
+
+div {
+    border: black double 60px;
+    margin: 10px 500px 250px 500px;
+    background: bisque
+}

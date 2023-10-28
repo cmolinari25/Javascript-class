@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Practice: CSS Corner Cafe</title>
+    <link rel="stylesheet" href="css/practice-styles.css" />
+</head>
+
+<body>
+    <h1>CSS Corner Cafe</h1>
+
+    <section>
+        <h2>Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th></th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/coffee.jpg" alt="Coffee picture"></td>
+                    <td>Coffee</td>
+                    <td>$2</td>
+
+                </tr>
+                <tr>
+                    <td><img src="images/tea.jpg" alt="tea cup image"></td>
+                    <td>Tea</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td><img src="images/chicken-waffles.jpg" alt="chicken and waffle Picture"></td>
+                    <td>Chicken & Waffles</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td><img src="images/blueberry-hill.jpg" alt="pancakes image"></td>
+                    <td>Blueberry Pancakes</td>
+                    <td>$6</td>
+                </tr>
+                <tr>
+                    <td><img src="images/banana-split.jpg" alt="ice cream picture"></td>
+                    <td>Banana Split</td>
+                    <td>$4.65</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Submit Your Review</h2>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="rating">Your Rating:</label>
+            1 <input type="range" id="rating" name="rating" min="1" max="5" /> 5
+            <label for="remarks"> Comments or Remarks:</label>
+            <textarea id="remarks" name="remarks" rows="4" cols="100">Let us know what you think!</textarea>
+            <br>
+            <input type="submit" id="submit-btn" />
+        </form>
+    </section>
+    <div>
+        <h2>Contact</h2>
+        <p>Call us at: <a href="tel:+15555551212">1-555-555-1212</a></p>
+        <address>
+            CSS Corner Cafe<br />
+            101 W Main St<br />
+            Bellevue, WA 98004
+        </address>
+    </div>
+</body>
+
+</html>
